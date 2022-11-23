@@ -14,7 +14,7 @@
 
 </head>
 <body>
-<nav class="navbar navbar-expand-lg beige-clair">
+<nav class="navbar navbar-expand-lg sticky-top beige-moyen">
   <div class="container-fluid">
     <a class="navbar-brand" href="#"><img id="logo" src="../img/logo-mini.png" class="img-thumbnail" alt="Logo Tronc Commun"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,22 +22,14 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
+        <li class="nav-item text-center">
           <a class="nav-link active" aria-current="page" href="index.html">Accueil</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="gallerie.html">Gallerie</a>
+        <li class="nav-item text-center">
+          <a class="nav-link" href="gallerie.html">Notre histoire</a>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
+        <li class="nav-item text-center">
+          <a class="nav-link" href="contact.html">Contact</a>
         </li>
       </ul>
     </div>
@@ -46,14 +38,14 @@
 
 <main>
 	<div class="container-fluid">
-		<div class="row vh-100 banner">
-			<img class="img-fluid banner" src="./img/tc-img-sapin01.jpg">	
+		<div class="row vh-100 banner p-0">
+			<img class="img-fluid bckg-banner" src="./img/tc-img-sapin01.jpg">	
 		</div>	
-		<div class="row vh-100">
-			<div class="col"></div>
-			<div class="col d-flex flex-column justify-content-center">
+		<div class="row vh-100 p-0">
+			<div class="col-sm-6"></div>
+			<div class="col-sm-6 d-flex flex-column justify-content-center">
 				<h1 class="beige-clair p-2">Des épines plein les yeux!</h1>
-				<button type="button" class="btn-cta btn btn-outline-light p-2">Visiter</button>
+				<a href="gallerie.html"><button type="button" class="btn-cta btn btn-outline-light p-2">Visiter</button></a>
 			</div>		  
 		</div>
 	</div>	
@@ -61,7 +53,7 @@
 
 <footer>
 	<div class="container-fluid beige-clair p-3">
-		<span class="info">Copyright / Belle Epine</span>
+		<p class="info text-center">Copyright / Belle Epine</p>
 	</div>
 </footer>
 </body>

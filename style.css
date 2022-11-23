@@ -1,5 +1,6 @@
 :root {
 	--beige-clair:#EFECE2;
+	--beige-moyen:#E3D2C4;
 	--beige-gris:#706F6B;
 	--gris-vert:#8A884C;
 	--gris-vert-middle:#4A4929;
@@ -9,11 +10,16 @@
 
 /* ----------- Typographie ------------- */
 
+* {
+	margin: 0;
+	padding: 0;
+}
 p,a{
 	font-family:'Work Sans', sans-serif ;
 	color:var(--vert-noir);
 }
 a:hover{
+	text-decoration: underline;
 	color: var(--gris-vert);
 }
 
@@ -21,10 +27,21 @@ h1,h2{
 	font-family: 'Alice', serif;
 }
 
+h1.marron{
+	color: var(--gris-vert-middle);
+}
+
 .beige-clair{
 	color: var(--beige-clair);
 }
 
+.beige-moyen{
+	color: var(--beige-moyen);
+}
+
+.kaki{
+	background-color: var(--vert-kaki);
+}
 /* ----------- Header ------------- */
 
 #logo{
@@ -34,24 +51,13 @@ h1,h2{
 	margin: 0 auto;
 }
 
-.navbar-expand-lg .navbar-nav {
-  flex-direction: row;
-  justify-content: flex-end;
-  width: 100%;
-}
-
-.navbar > .container, 
-.navbar > .container-fluid, 
-.navbar > .container-lg, 
-.navbar > .container-md, 
-.navbar > .container-sm, 
-.navbar > .container-xl, 
-.navbar > .container-xxl {
-  justify-content: center;
-}
-
 nav {
 	background-color: var(--beige-clair);
+}
+
+.navbar-toggler,
+.navbar-toggler{
+	border: none;
 }
 
 /* ----------- Structure ------------- */
@@ -60,17 +66,24 @@ main{
 	height: 100%;
 }
 
+body{
+	background-color: var(--beige-clair);
+}
+
 .container-fluid{
 	position: relative;
 }
 
 .banner{
 	overflow: hidden;
-	height: 100%;
-	width: 100%;
 	filter: brightness(0.5);
 	position: absolute;
 	z-index: -10;
+}
+
+img.bckg-banner{
+	object-fit: cover;
+	padding: 0;
 }
 
 
@@ -83,4 +96,11 @@ main{
 
 .btn-cta{
 	max-width: 150px;
+}
+
+.splitter{
+	display: block;
+	width: 100%;
+	height: 1px;
+	background-color: var(--gris-vert);
 }
