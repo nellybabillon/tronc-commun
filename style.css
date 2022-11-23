@@ -42,6 +42,15 @@ h1.marron{
 .kaki{
 	background-color: var(--vert-kaki);
 }
+
+.gris-vert{
+	background-color: var(--gris-vert);
+}
+
+.gris-vert:hover {
+	background-color: var(--vert-kaki);
+}
+
 /* ----------- Header ------------- */
 
 #logo{
@@ -55,9 +64,17 @@ nav {
 	background-color: var(--beige-clair);
 }
 
+.navbar-collapse{
+	justify-content: flex-end;
+}
+
 .navbar-toggler,
 .navbar-toggler{
 	border: none;
+}
+
+.me-auto{
+	margin-right: 0!important;
 }
 
 /* ----------- Structure ------------- */
@@ -76,6 +93,7 @@ body{
 
 .banner{
 	overflow: hidden;
+	max-width: 100vw;
 	filter: brightness(0.5);
 	position: absolute;
 	z-index: -10;
@@ -96,6 +114,10 @@ img.bckg-banner{
 
 .btn-cta{
 	max-width: 150px;
+}
+
+.btn-primary{
+	border: none;
 }
 
 .splitter{
