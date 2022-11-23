@@ -21,6 +21,10 @@ h1,h2{
 	font-family: 'Alice', serif;
 }
 
+.beige-clair{
+	color: var(--beige-clair);
+}
+
 /* ----------- Header ------------- */
 
 #logo{
@@ -52,8 +56,31 @@ nav {
 
 /* ----------- Structure ------------- */
 
+main{
+	height: 100%;
+}
+
+.container-fluid{
+	position: relative;
+}
+
+.banner{
+	overflow: hidden;
+	height: 100%;
+	width: 100%;
+	filter: brightness(0.5);
+	position: absolute;
+	z-index: -10;
+}
+
 
 /* ----------- Footer ------------- */
 
 
 /* ----------- Media ------------- */
+
+/* ----------- Component ------------- */
+
+.btn-cta{
+	max-width: 150px;
+}
