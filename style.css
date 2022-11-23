@@ -1,0 +1,59 @@
+:root {
+	--beige-clair:#EFECE2;
+	--beige-gris:#706F6B;
+	--gris-vert:#8A884C;
+	--gris-vert-middle:#4A4929;
+	--vert-kaki:#33321B	;
+	--vert-noir:#0F0F08;
+}
+
+/* ----------- Typographie ------------- */
+
+p,a{
+	font-family:'Work Sans', sans-serif ;
+	color:var(--vert-noir);
+}
+a:hover{
+	color: var(--gris-vert);
+}
+
+h1,h2{
+	font-family: 'Alice', serif;
+}
+
+/* ----------- Header ------------- */
+
+#logo{
+	max-width: 250px;
+	border: none;
+	background-color: transparent;
+	margin: 0 auto;
+}
+
+.navbar-expand-lg .navbar-nav {
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.navbar > .container, 
+.navbar > .container-fluid, 
+.navbar > .container-lg, 
+.navbar > .container-md, 
+.navbar > .container-sm, 
+.navbar > .container-xl, 
+.navbar > .container-xxl {
+  justify-content: center;
+}
+
+nav {
+	background-color: var(--beige-clair);
+}
+
+/* ----------- Structure ------------- */
+
+
+/* ----------- Footer ------------- */
+
+
+/* ----------- Media ------------- */
